@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\proyectoFinal-Escritorio.exe
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\proyectoFinal-Escritorio.deps.json
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\proyectoFinal-Escritorio.runtimeconfig.json
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\proyectoFinal-Escritorio.pdb
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\app.publish\Newtonsoft.Json.dll

@@ -1,0 +1,266 @@
+<Window x:Class="proyectoFinal_Escritorio.DescuentosPermanenciaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestión de Descuentos de Clientes"
+        Height="800" Width="1400"
+        WindowStartupLocation="CenterScreen"
+        Background="#F8F9FA">
+
+    <Window.Resources>
+        <!-- Estilos comunes -->
+        <Style x:Key="HeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#323130"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+
+        <Style x:Key="SubHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#605E5C"/>
+        </Style>
+
+        <Style x:Key="LabelTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="#323130"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="FluentButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="4" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#106EBE"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#005A9E"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button" BasedOn="{StaticResource FluentButtonStyle}">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#0078D4"/>
+            <Setter Property="BorderBrush" Value="#0078D4"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="FluentTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E1E1E1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="Height" Value="28"/>
+        </Style>
+
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserResizeColumns" Value="True"/>
+            <Setter Property="CanUserSortColumns" Value="True"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="RowHeight" Value="35"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#F8F9FA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="White" Padding="30,20" BorderThickness="0,0,0,1" BorderBrush="#E1E1E1">
+            <Border.Effect>
+                <DropShadowEffect Color="#E0E0E0" Direction="270" ShadowDepth="2" BlurRadius="4" Opacity="0.3"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Gestión de Descuentos de Clientes" Style="{StaticResource HeaderTextStyle}"/>
+                <TextBlock Text="Administra los descuentos actuales de todos los clientes" Style="{StaticResource SubHeaderTextStyle}"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Panel: Clientes List -->
+            <Border Grid.Column="0" Background="White" CornerRadius="8" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect Color="#E0E0E0" Direction="270" ShadowDepth="4" BlurRadius="8" Opacity="0.4"/>
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Search Section -->
+                    <StackPanel Grid.Row="0" Margin="0,0,0,15">
+                        <TextBlock Text="Buscar Cliente" Style="{StaticResource LabelTextStyle}"/>
+                        <TextBox x:Name="SearchTextBox" Style="{StaticResource FluentTextBoxStyle}"
+                                TextChanged="SearchTextBox_TextChanged" Margin="0,0,0,10"/>
+                    </StackPanel>
+
+                    <!-- Clientes DataGrid -->
+                    <DataGrid Grid.Row="2" x:Name="ClientesDataGrid" Style="{StaticResource DataGridStyle}"
+                             SelectionChanged="ClientesDataGrid_SelectionChanged"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="DNI" Binding="{Binding Dni}" Width="80"/>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding NombreCompleto}" Width="*"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="120"/>
+                            <DataGridTextColumn Header="Descuento Actual %" Binding="{Binding DescuentoActual}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Status Bar -->
+                    <Border Grid.Row="3" Background="#F8F9FA" Padding="10" CornerRadius="4" Margin="0,15,0,0">
+                        <TextBlock x:Name="StatusText" Text="Cargando clientes..." FontSize="11" Foreground="#605E5C"/>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Right Panel: Cliente Details -->
+            <Border Grid.Column="2" Background="White" CornerRadius="8" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect Color="#E0E0E0" Direction="270" ShadowDepth="4" BlurRadius="8" Opacity="0.4"/>
+                </Border.Effect>
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock Text="Detalles del Cliente" Style="{StaticResource HeaderTextStyle}" FontSize="14"/>
+
+                        <!-- Cliente Info (Read-only) -->
+                        <Border Background="#F8F9FA" CornerRadius="4" Padding="15" Margin="0,0,0,15">
+                            <StackPanel>
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Nombre" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="NombreText" Text="-" FontSize="12"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="DNI" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="DniText" Text="-" FontSize="12"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Email" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="EmailText" Text="-" FontSize="12" TextWrapping="Wrap"/>
+                                </StackPanel>
+
+                                <StackPanel>
+                                    <TextBlock Text="Teléfono" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="TelefonoText" Text="-" FontSize="12"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Membresía Info -->
+                        <Border Background="#FFF4CE" CornerRadius="4" Padding="15" Margin="0,0,0,15" BorderBrush="#FFD700" BorderThickness="1">
+                            <StackPanel>
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Tipo de Membresía" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="TipoMembresiText" Text="-" FontSize="12" FontWeight="SemiBold"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Fecha Inicio" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="FechaInicioText" Text="-" FontSize="12"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Fecha Fin" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="FechaFinText" Text="-" FontSize="12"/>
+                                </StackPanel>
+
+                                <StackPanel>
+                                    <TextBlock Text="Tiempo Restante" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBlock x:Name="TiempoRestanteText" Text="-" FontSize="12" Foreground="#0078D4" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Descuento Management -->
+                        <Border Background="#E7F3FF" CornerRadius="4" Padding="15" Margin="0,0,0,15" BorderBrush="#0078D4" BorderThickness="1">
+                            <StackPanel>
+                                <StackPanel Margin="0,0,0,15">
+                                    <TextBlock Text="Descuento Actual" Style="{StaticResource LabelTextStyle}"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock x:Name="DescuentoActualText" Text="0" FontSize="28" FontWeight="Bold" Foreground="#0078D4"/>
+                                        <TextBlock Text="%" FontSize="18" Foreground="#0078D4" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <Separator Margin="0,0,0,15" BorderBrush="#D0D0D0"/>
+
+                                <StackPanel Margin="0,0,0,10">
+                                    <TextBlock Text="Nuevo Descuento (%)" Style="{StaticResource LabelTextStyle}"/>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="50"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox Grid.Column="0" x:Name="NuevoDescuentoTextBox" Style="{StaticResource FluentTextBoxStyle}"
+                                                PreviewTextInput="NuevoDescuento_PreviewTextInput"
+                                                TextChanged="NuevoDescuento_TextChanged"/>
+                                        <TextBlock Grid.Column="1" Text="%" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+                                    </Grid>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,15">
+                                    <TextBlock Text="Justificación (opcional)" Style="{StaticResource LabelTextStyle}"/>
+                                    <TextBox x:Name="JustificacionTextBox" Style="{StaticResource FluentTextBoxStyle}"
+                                            Height="60" VerticalAlignment="Top" TextWrapping="Wrap" AcceptsReturn="True"/>
+                                </StackPanel>
+
+                                <!-- Action Buttons -->
+                                <StackPanel Orientation="Vertical" Margin="0,10,0,0">
+                                    <Button x:Name="GuardarButton" Content="💾 Guardar Cambios" Style="{StaticResource FluentButtonStyle}"
+                                           Click="GuardarButton_Click" Margin="0,0,0,5"/>
+                                    <Button Content="🔄 Revertir" Style="{StaticResource SecondaryButtonStyle}"
+                                           Click="RevertirButton_Click"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Info Box -->
+                        <Border Background="#F0F0F0" CornerRadius="4" Padding="10" Margin="0,0,0,0">
+                            <TextBlock Text="ℹ️ Selecciona un cliente de la lista para gestionar su descuento por permanencia."
+                                      FontSize="11" Foreground="#605E5C" TextWrapping="Wrap"/>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

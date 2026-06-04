@@ -1,0 +1,132 @@
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.exe
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.deps.json
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.runtimeconfig.json
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.pdb
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\AveriasSimpleWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\CostosWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DescuentosPermanenciaWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DiscountTestWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneralReputationHistoryWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\LoginWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineCostsWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineFormWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStateWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStatsWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MaquinasWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevaAveriaSimpleWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoCostoWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationDialog.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationHistoryWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UserFormWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UsuariosWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\AveriasSimpleWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\CostosWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DescuentosPermanenciaWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DiscountTestWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneralReputationHistoryWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\LoginWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineCostsWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineFormWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineHistoryWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStateWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStatsWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MaquinasWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevaAveriaSimpleWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoCostoWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationDialog.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationHistoryWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UserFormWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UsuariosWindow.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\App.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio_MarkupCompile.cache
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio_MarkupCompile.lref
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineHistoryWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MainWindow.baml
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.g.resources
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.AssemblyInfo.cs
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.CopyComplete
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\refint\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.pdb
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.genruntimeconfig.cache
+C:\Users\Admin\Desktop\proyecto-final-de-grado-main\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ref\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.exe
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.deps.json
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.runtimeconfig.json
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.pdb
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\AveriasSimpleWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\CostosWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DescuentosPermanenciaWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneralReputationHistoryWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\LoginWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineCostsWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineFormWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStateWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStatsWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MaquinasWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevaAveriaSimpleWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoCostoWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoPedidoWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ProveedoresWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ProveedorFormWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationDialog.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationHistoryWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UserFormWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UsuariosWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\AveriasSimpleWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\CostosWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\DescuentosPermanenciaWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneralReputationHistoryWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\LoginWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineCostsWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineFormWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineHistoryWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStateWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineStatsWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MaquinasWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevaAveriaSimpleWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoCostoWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\NuevoPedidoWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ProveedoresWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ProveedorFormWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationDialog.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationHistoryWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ReputationWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UserFormWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\UsuariosWindow.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\App.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio_MarkupCompile.cache
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio_MarkupCompile.lref
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MachineHistoryWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\MainWindow.baml
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.g.resources
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.AssemblyInfo.cs
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.csproj.CopyComplete
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\refint\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.pdb
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.genruntimeconfig.cache
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\ref\proyectoFinal-Escritorio.dll
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.dll.manifest
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\bin\Release\net8.0-windows\proyectoFinal-Escritorio.application
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.dll.manifest
+C:\Users\Admin\Desktop\copia 9 por si aca\proyectoFinal-Escritorio\proyectoFinal-Escritorio\obj\Release\net8.0-windows\proyectoFinal-Escritorio.application

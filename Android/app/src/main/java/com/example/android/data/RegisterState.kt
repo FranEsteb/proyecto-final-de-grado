@@ -1,0 +1,30 @@
+package com.example.android.data
+
+data class RegisterState(
+    val name: String = "",
+    val email: String = "",
+    val password: String = "",
+    val confirmPassword: String = "",
+    val dni: String = "",
+    val ciudad: String = "",
+    val fechaNacimiento: String = "",
+    val isPasswordVisible: Boolean = false,
+    val isConfirmPasswordVisible: Boolean = false,
+    val isLoading: Boolean = false,
+    val registerSuccess: Boolean = false,
+    val errorMessage: String? = null,
+    val isNameError: Boolean = false,
+    val nameErrorMessage: String? = null,
+    val isEmailError: Boolean = false,
+    val emailErrorMessage: String? = null,
+    val isPasswordError: Boolean = false,
+    val passwordErrorMessage: String? = null,
+    val isConfirmPasswordError: Boolean = false,
+    val confirmPasswordErrorMessage: String? = null,
+    val isDniError: Boolean = false,
+    val dniErrorMessage: String? = null,
+    val isCiudadError: Boolean = false,
+    val ciudadErrorMessage: String? = null,
+    val isFechaNacimientoError: Boolean = false,
+    val fechaNacimientoErrorMessage: String? = null
+)

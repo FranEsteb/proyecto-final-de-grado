@@ -1,0 +1,759 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\userformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\userformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\averiassimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\averiassimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\costoswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\costoswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\descuentospermanenciawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\descuentospermanenciawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\generalreputationhistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\generalreputationhistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machinecostswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machinecostswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machineformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machineformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machinehistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machinehistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machinestatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machinestatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machinestatswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machinestatswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\maquinaswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\maquinaswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\nuevaaveriasimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\nuevaaveriasimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\nuevocostowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\nuevocostowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\nuevopedidowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\nuevopedidowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\proveedoreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\proveedoreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\proveedorformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\proveedorformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\reputationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\reputationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\reputationhistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\reputationhistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\reputationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\reputationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\userformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\userformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\usuarioswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\usuarioswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\generalreputationhistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\generalreputationhistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\averiassimplewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\averiassimplewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\costoswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\costoswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\usuarioswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\usuarioswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\models\\averia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\models\\averia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\maquinaswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\maquinaswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\reputationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\reputationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\machinecostswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\machinecostswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\descuentospermanenciawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\descuentospermanenciawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\descuentos_permanencia_implementacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\descuentos_permanencia_implementacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\models\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\models\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\models\\maquina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\models\\maquina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\models\\costo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\models\\costo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|c:\\users\\retra\\desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectofinal-escritorio\\proyectofinal-escritorio\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1918981-599A-4173-8CF7-4B267780A039}|proyectoFinal-Escritorio\\proyectoFinal-Escritorio.csproj|solutionrelative:proyectofinal-escritorio\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MembershipManagementWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineBulkUpdateWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MainWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MachineCostsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineCostsWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineCostsWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineCostsWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineCostsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\LoginWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeneralReputationHistoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AveriasSimpleWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MachineHistoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineHistoryWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineHistoryWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineHistoryWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineHistoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DescuentosPermanenciaWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserFormWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UserFormWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\UserFormWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UserFormWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\UserFormWindow.xaml.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAvwCMBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MaquinasWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MaquinasWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MaquinasWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MaquinasWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MaquinasWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MachineStateWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineStateWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineStateWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineStateWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineStateWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CostosWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\CostosWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\CostosWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\CostosWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\CostosWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MachineFormWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineFormWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineFormWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineFormWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineFormWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:04.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NuevaAveriaSimpleWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevaAveriaSimpleWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\NuevaAveriaSimpleWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevaAveriaSimpleWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\NuevaAveriaSimpleWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NuevoCostoWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevoCostoWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\NuevoCostoWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevoCostoWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\NuevoCostoWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NuevoPedidoWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevoPedidoWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\NuevoPedidoWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\NuevoPedidoWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\NuevoPedidoWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MaquinasWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MaquinasWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MaquinasWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MaquinasWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MaquinasWindow.xaml.cs",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DESCUENTOS_PERMANENCIA_IMPLEMENTACION.md",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DESCUENTOS_PERMANENCIA_IMPLEMENTACION.md",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\DESCUENTOS_PERMANENCIA_IMPLEMENTACION.md",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DESCUENTOS_PERMANENCIA_IMPLEMENTACION.md",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\DESCUENTOS_PERMANENCIA_IMPLEMENTACION.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-04-28T23:20:05.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Tecnico.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Tecnico.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Models\\Tecnico.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Tecnico.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Models\\Tecnico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProveedoresWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ProveedoresWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ProveedoresWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ProveedoresWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ProveedoresWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MainWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwEQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsuariosWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UsuariosWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\UsuariosWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UsuariosWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\UsuariosWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReputationDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationDialog.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ReputationDialog.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationDialog.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ReputationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MachineStatsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineStatsWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineStatsWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineStatsWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineStatsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReputationHistoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationHistoryWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ReputationHistoryWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationHistoryWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ReputationHistoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProveedorFormWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ProveedorFormWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ProveedorFormWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ProveedorFormWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ProveedorFormWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReputationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ReputationWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ReputationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\App.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\App.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\App.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CostosWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\CostosWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\CostosWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\CostosWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\CostosWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\SessionManager.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\SessionManager.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\SessionManager.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\SessionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\App.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\App.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DescuentosPermanenciaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\DescuentosPermanenciaWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UsuariosWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UsuariosWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\UsuariosWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UsuariosWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\UsuariosWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserFormWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UserFormWindow.xaml",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\UserFormWindow.xaml",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\UserFormWindow.xaml",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\UserFormWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GeneralReputationHistoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\GeneralReputationHistoryWindow.xaml.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAkwLIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Services\\ApiService.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Services\\ApiService.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAHgFAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Maquina.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Maquina.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Models\\Maquina.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Maquina.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Models\\Maquina.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Averia.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Averia.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Models\\Averia.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Averia.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Models\\Averia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AveriasSimpleWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\AveriasSimpleWindow.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ReputationDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationDialog.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\ReputationDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\ReputationDialog.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\ReputationDialog.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MachineCostsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineCostsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\MachineCostsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineCostsWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\MachineCostsWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Costo.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Costo.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Models\\Costo.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Costo.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Models\\Costo.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DiscountTestWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml.cs",
+              "ViewState": "AQIAAHUBAAAAAAAAAAAUwMQBAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DiscountTestWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\DiscountTestWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\Models\\Usuario.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\Models\\Usuario.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAwwNQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\LoginWindow.xaml.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwM4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "proyectoFinal-Escritorio\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\retra\\Desktop\\proyecto-final-de-grado-main\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\AssemblyInfo.cs",
+              "RelativeToolTip": "proyectoFinal-Escritorio\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:20:05.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MembershipManagementWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MembershipManagementWindow.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MembershipManagementWindow.xaml",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MembershipManagementWindow.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MembershipManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "MachineBulkUpdateWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineBulkUpdateWindow.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineBulkUpdateWindow.xaml",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineBulkUpdateWindow.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\admin\\Desktop\\proyecto-final-de-grado-main\\proyectoFinal-Escritorio\\proyectoFinal-Escritorio\\MachineBulkUpdateWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T23:20:05.224Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

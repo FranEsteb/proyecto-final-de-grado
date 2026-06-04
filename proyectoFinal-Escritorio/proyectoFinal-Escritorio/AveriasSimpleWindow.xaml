@@ -1,0 +1,605 @@
+<!-- Ventana simplificada de gestión de averías
+     He diseñado esta ventana con dos pestañas principales:
+     1. Averías Pendientes: Lista de averías por resolver con botón check
+     2. Historial: Averías ya resueltas
+     
+     El diseño es limpio y directo, enfocado en la funcionalidad esencial -->
+<Window x:Class="proyectoFinal_Escritorio.AveriasSimpleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestión de Averías" Height="700" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+
+    <Window.Resources>
+        <!-- Estilos simplificados -->
+        <Style x:Key="FluentButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="4"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#106EBE"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#0078D4"/>
+            <Setter Property="BorderBrush" Value="#0078D4"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style x:Key="SuccessButtonStyle" TargetType="Button" BasedOn="{StaticResource FluentButtonStyle}">
+            <Setter Property="Background" Value="#107C10"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#0E6B0E"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Template para prioridad con colores -->
+        <DataTemplate x:Key="PrioridadTemplate">
+            <Border CornerRadius="10" Padding="8,3" HorizontalAlignment="Center">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Prioridad}" Value="alta">
+                                <Setter Property="Background" Value="#D13438"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Prioridad}" Value="media">
+                                <Setter Property="Background" Value="#FF8C00"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Prioridad}" Value="baja">
+                                <Setter Property="Background" Value="#107C10"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <TextBlock Text="{Binding PrioridadCapitalizada}" Foreground="White" 
+                         FontSize="10" FontWeight="SemiBold"/>
+            </Border>
+        </DataTemplate>
+
+        <!-- Estilo para botón primario -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="4"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#106EBE"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#005A9E"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- He elegido un fondo gris claro para mejor contraste -->
+    <Grid Background="#F8F9FA">
+        <Grid.RowDefinitions>
+            <!-- Header con título y botones -->
+            <RowDefinition Height="Auto"/>
+            <!-- Contenido principal con pestañas -->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="White" Height="70" BorderBrush="#E1E1E1" BorderThickness="0,0,0,1">
+            <Grid Margin="30,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Gestión de Averías" 
+                             FontSize="20" FontWeight="SemiBold" 
+                             Foreground="#323130" Margin="0,0,0,5"/>
+                    <TextBlock x:Name="StatusText" Text="Sistema simplificado de gestión de averías" 
+                             FontSize="12" Foreground="#605E5C"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button x:Name="RefreshButton" Content="🔄 Actualizar" 
+                          Style="{StaticResource SecondaryButtonStyle}" 
+                          Margin="0,0,10,0" Click="RefreshButton_Click"/>
+                    <Button x:Name="NewAveriaButton" Content="➕ Nueva Avería" 
+                          Style="{StaticResource FluentButtonStyle}" 
+                          Margin="0,0,10,0" Click="NewAveriaButton_Click"/>
+                    <Button x:Name="BackButton" Content="⬅️ Volver" 
+                          Style="{StaticResource SecondaryButtonStyle}" 
+                          Click="BackButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Contenido principal con pestañas -->
+        <TabControl Grid.Row="1" Margin="20" FontSize="14" FontWeight="SemiBold">
+            
+            <!-- Pestaña 1: Averías Pendientes -->
+            <TabItem Header="📋 Averías Pendientes">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Información de estadísticas -->
+                    <Border Grid.Row="0" Background="White" CornerRadius="6" Padding="15" Margin="0,0,0,15">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" x:Name="PendientesCountText" 
+                                     Text="0 averías pendientes" 
+                                     FontSize="16" FontWeight="SemiBold" 
+                                     VerticalAlignment="Center"/>
+
+                            <!-- Contadores por prioridad -->
+                            <Border Grid.Column="1" Background="#FFEBEE" CornerRadius="15" Padding="10,5" Margin="10,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="🚨" FontSize="12" Margin="0,0,5,0"/>
+                                    <TextBlock x:Name="AltaPrioridadText" Text="0 Alta" FontSize="11" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Grid.Column="2" Background="#FFF3E0" CornerRadius="15" Padding="10,5" Margin="5,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="⚠️" FontSize="12" Margin="0,0,5,0"/>
+                                    <TextBlock x:Name="MediaPrioridadText" Text="0 Media" FontSize="11" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Grid.Column="3" Background="#E8F5E8" CornerRadius="15" Padding="10,5" Margin="5,0,0,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="ℹ️" FontSize="12" Margin="0,0,5,0"/>
+                                    <TextBlock x:Name="BajaPrioridadText" Text="0 Baja" FontSize="11" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <!-- Lista de averías pendientes -->
+                    <Border Grid.Row="1" Background="White" CornerRadius="6" Padding="10">
+                        <DataGrid x:Name="PendientesDataGrid"
+                                AutoGenerateColumns="False"
+                                CanUserAddRows="False"
+                                CanUserDeleteRows="False"
+                                CanUserReorderColumns="True"
+                                CanUserResizeColumns="True"
+                                CanUserSortColumns="True"
+                                GridLinesVisibility="Horizontal"
+                                HeadersVisibility="Column"
+                                HorizontalGridLinesBrush="#F0F0F0"
+                                Background="White"
+                                AlternatingRowBackground="#F8F9FA"
+                                RowHeight="50"
+                                FontSize="12"
+                                FontFamily="Segoe UI"
+                                SelectionMode="Single">
+                            
+                            <DataGrid.Columns>
+                                <!-- Elemento afectado -->
+                                <DataGridTextColumn Header="Elemento Afectado" 
+                                                  Binding="{Binding ElementoAfectado}" 
+                                                  Width="200"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Descripción -->
+                                <DataGridTextColumn Header="Descripción del Problema" 
+                                                  Binding="{Binding Descripcion}" 
+                                                  Width="*"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="TextWrapping" Value="Wrap"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Prioridad -->
+                                <DataGridTemplateColumn Header="Prioridad" Width="100">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <ContentPresenter Content="{Binding}" 
+                                                            ContentTemplate="{StaticResource PrioridadTemplate}" 
+                                                            VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                
+                                <!-- Fecha de reporte -->
+                                <DataGridTextColumn Header="Fecha Reporte"
+                                                  Binding="{Binding FechaReporteFormateada}"
+                                                  Width="100"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+
+                                <!-- Costo de Reparación -->
+                                <DataGridTextColumn Header="Costo Estimado"
+                                                  Binding="{Binding CostoReparacionFormateado}"
+                                                  Width="120"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="Foreground" Value="#D13438"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+
+                                <!-- Observaciones -->
+                                <DataGridTextColumn Header="Observaciones" 
+                                                  Binding="{Binding Observaciones}" 
+                                                  Width="150"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Botón de marcar como solucionada -->
+                                <DataGridTemplateColumn Header="Acción" Width="120">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="✅ Solucionar" 
+                                                  Style="{StaticResource SuccessButtonStyle}"
+                                                  Width="110" Height="30"
+                                                  FontSize="10"
+                                                  Click="MarcarSolucionadaButton_Click"
+                                                  Tag="{Binding}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- Pestaña 2: Historial de Averías Resueltas -->
+            <TabItem Header="📚 Historial Resueltas">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Información del historial -->
+                    <Border Grid.Row="0" Background="White" CornerRadius="6" Padding="15" Margin="0,0,0,15">
+                        <TextBlock x:Name="ResueltasCountText"
+                                 Text="0 averías resueltas"
+                                 FontSize="16" FontWeight="SemiBold"
+                                 VerticalAlignment="Center"/>
+                    </Border>
+
+                    <!-- Lista de averías resueltas -->
+                    <Border Grid.Row="1" Background="White" CornerRadius="6" Padding="10">
+                        <DataGrid x:Name="ResueltasDataGrid"
+                                AutoGenerateColumns="False"
+                                CanUserAddRows="False"
+                                CanUserDeleteRows="False"
+                                CanUserReorderColumns="True"
+                                CanUserResizeColumns="True"
+                                CanUserSortColumns="True"
+                                GridLinesVisibility="Horizontal"
+                                HeadersVisibility="Column"
+                                HorizontalGridLinesBrush="#F0F0F0"
+                                Background="White"
+                                AlternatingRowBackground="#F8F9FA"
+                                RowHeight="45"
+                                FontSize="12"
+                                FontFamily="Segoe UI"
+                                SelectionMode="Single">
+                            
+                            <DataGrid.Columns>
+                                <!-- Elemento afectado -->
+                                <DataGridTextColumn Header="Elemento Afectado" 
+                                                  Binding="{Binding ElementoAfectado}" 
+                                                  Width="200"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Descripción -->
+                                <DataGridTextColumn Header="Descripción" 
+                                                  Binding="{Binding Descripcion}" 
+                                                  Width="*"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="TextWrapping" Value="Wrap"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Prioridad -->
+                                <DataGridTemplateColumn Header="Prioridad" Width="100">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <ContentPresenter Content="{Binding}" 
+                                                            ContentTemplate="{StaticResource PrioridadTemplate}" 
+                                                            VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                
+                                <!-- Fecha de reporte -->
+                                <DataGridTextColumn Header="Fecha Reporte"
+                                                  Binding="{Binding FechaReporteFormateada}"
+                                                  Width="100"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+
+                                <!-- Costo de Reparación -->
+                                <DataGridTextColumn Header="Costo"
+                                                  Binding="{Binding CostoReparacionFormateado}"
+                                                  Width="110"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="Foreground" Value="#D13438"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+
+                                <!-- Fecha de resolución -->
+                                <DataGridTextColumn Header="Fecha Resolución" 
+                                                  Binding="{Binding FechaResolucionFormateada}" 
+                                                  Width="120"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="Foreground" Value="#107C10"/>
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Estado visual -->
+                                <DataGridTemplateColumn Header="Estado" Width="80">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Border Background="#107C10" CornerRadius="10" 
+                                                  Padding="8,3" HorizontalAlignment="Center">
+                                                <TextBlock Text="✅ Resuelta" Foreground="White" 
+                                                         FontSize="9" FontWeight="SemiBold"/>
+                                            </Border>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- Tercera pestaña: Programar Reparaciones -->
+            <TabItem Header="🔧 Programar Reparaciones">
+                <Grid Margin="0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Header de la pestaña de reparaciones -->
+                    <Border Grid.Row="0" Background="White" CornerRadius="6" Padding="15" Margin="0,0,0,10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="Gestión de Reparaciones" 
+                                         FontSize="16" FontWeight="SemiBold" Foreground="#323130"/>
+                                <TextBlock x:Name="ReparacionesCountText" Text="0 reparaciones programadas" 
+                                         FontSize="12" Foreground="#605E5C" Margin="0,2,0,0"/>
+                            </StackPanel>
+                            
+                            <Button Grid.Column="1" Content="📅 Programar Nueva" 
+                                  Style="{StaticResource PrimaryButtonStyle}"
+                                  Width="150" Height="35"
+                                  Click="ProgramarReparacionButton_Click"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- DataGrid de reparaciones programadas -->
+                    <Border Grid.Row="1" Background="White" CornerRadius="6" Padding="10">
+                        <DataGrid x:Name="ReparacionesDataGrid"
+                                AutoGenerateColumns="False"
+                                CanUserAddRows="False"
+                                CanUserDeleteRows="False"
+                                CanUserReorderColumns="True"
+                                CanUserResizeColumns="True"
+                                CanUserSortColumns="True"
+                                GridLinesVisibility="Horizontal"
+                                HeadersVisibility="Column"
+                                HorizontalGridLinesBrush="#F0F0F0"
+                                Background="White"
+                                AlternatingRowBackground="#F8F9FA"
+                                RowHeight="50"
+                                FontSize="12"
+                                FontFamily="Segoe UI"
+                                SelectionMode="Single">
+                            
+                            <DataGrid.Columns>
+                                <!-- Elemento afectado -->
+                                <DataGridTextColumn Header="Elemento" 
+                                                  Binding="{Binding ElementoAfectado}" 
+                                                  Width="150"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <!-- Descripción -->
+                                <DataGridTextColumn Header="Problema" 
+                                                  Binding="{Binding Descripcion}" 
+                                                  Width="200"
+                                                  IsReadOnly="True">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="TextWrapping" Value="Wrap"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+
+                                <!-- Técnico Asignado -->
+                                <DataGridTemplateColumn Header="Técnico Asignado" Width="180">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <ComboBox x:Name="TecnicoComboBox"
+                                                    Width="170" Height="30"
+                                                    FontSize="11"
+                                                    SelectedValue="{Binding TecnicoAsignado}"
+                                                    SelectionChanged="TecnicoComboBox_SelectionChanged"
+                                                    Tag="{Binding}">
+                                                <ComboBoxItem Content="Sin asignar" Tag=""/>
+                                                <ComboBoxItem Content="Juan Pérez" Tag="Juan Pérez"/>
+                                                <ComboBoxItem Content="María García" Tag="María García"/>
+                                                <ComboBoxItem Content="Carlos López" Tag="Carlos López"/>
+                                                <ComboBoxItem Content="Ana Martín" Tag="Ana Martín"/>
+                                            </ComboBox>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Fecha Programada -->
+                                <DataGridTemplateColumn Header="Fecha Programada" Width="140">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <DatePicker x:Name="FechaProgramadaPicker"
+                                                      Width="130" Height="30"
+                                                      FontSize="11"
+                                                      SelectedDate="{Binding FechaProgramada}"
+                                                      SelectedDateChanged="FechaProgramada_SelectionChanged"
+                                                      Tag="{Binding}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Estado de Reparación -->
+                                <DataGridTemplateColumn Header="Estado" Width="130">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <ComboBox x:Name="EstadoReparacionComboBox"
+                                                    Width="120" Height="30"
+                                                    FontSize="11"
+                                                    SelectedValue="{Binding EstadoReparacion}"
+                                                    SelectionChanged="EstadoReparacion_SelectionChanged"
+                                                    Tag="{Binding}">
+                                                <ComboBoxItem Content="Programada" Tag="programada"/>
+                                                <ComboBoxItem Content="En Progreso" Tag="en_progreso"/>
+                                                <ComboBoxItem Content="Completada" Tag="completada"/>
+                                                <ComboBoxItem Content="Cancelada" Tag="cancelada"/>
+                                            </ComboBox>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Acciones -->
+                                <DataGridTemplateColumn Header="Acciones" Width="120">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="💾 Guardar" 
+                                                  Style="{StaticResource SuccessButtonStyle}"
+                                                  Width="110" Height="30"
+                                                  FontSize="10"
+                                                  Click="GuardarReparacionButton_Click"
+                                                  Tag="{Binding}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,377 @@
+<Window x:Class="proyectoFinal_Escritorio.GeneralReputationHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Historial General de Reputación" Height="800" Width="1200"
+        WindowStartupLocation="CenterOwner"
+        WindowState="Maximized">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        
+        <Style x:Key="FluentButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#0078D4"/>
+            <Setter Property="BorderBrush" Value="#0078D4"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style x:Key="FluentTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E1E1E1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#E0E0E0" Direction="270" ShadowDepth="4" BlurRadius="8" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Template para tipo de reputación -->
+        <DataTemplate x:Key="TipoReputacionTemplate">
+            <Border CornerRadius="4" Padding="8,4" HorizontalAlignment="Center">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Tipo}" Value="recompensa">
+                                <Setter Property="Background" Value="#E8F5E8"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Tipo}" Value="sancion">
+                                <Setter Property="Background" Value="#FFEBEE"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <TextBlock FontSize="10" FontWeight="SemiBold" HorizontalAlignment="Center">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Tipo}" Value="recompensa">
+                                    <Setter Property="Text" Value="✅ Recompensa"/>
+                                    <Setter Property="Foreground" Value="#107C10"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Tipo}" Value="sancion">
+                                    <Setter Property="Text" Value="❌ Sanción"/>
+                                    <Setter Property="Foreground" Value="#D13438"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Border>
+        </DataTemplate>
+
+        <!-- Template para puntos -->
+        <DataTemplate x:Key="PuntosDataTemplate">
+            <TextBlock Text="{Binding PuntosFormateados}" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding EsPositivo}" Value="True">
+                                <Setter Property="Foreground" Value="#107C10"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding EsPositivo}" Value="False">
+                                <Setter Property="Foreground" Value="#D13438"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Background="#F8F9FA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="White" Height="70">
+            <Border.Effect>
+                <DropShadowEffect Color="#E0E0E0" Direction="270" ShadowDepth="2" BlurRadius="4" Opacity="0.3"/>
+            </Border.Effect>
+            <Grid Margin="30,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Historial General de Reputación" 
+                             FontSize="24" 
+                             FontWeight="SemiBold" 
+                             FontFamily="Segoe UI" 
+                             Foreground="#323130"/>
+                    <TextBlock Text="Vista completa de todos los cambios de reputación del sistema" 
+                             FontSize="14" 
+                             FontFamily="Segoe UI" 
+                             Foreground="#605E5C"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button x:Name="RefreshButton"
+                          Content="🔄 Actualizar"
+                          Style="{StaticResource SecondaryButtonStyle}"
+                          Margin="5,0"
+                          Click="RefreshButton_Click"/>
+                    <Button x:Name="CloseButton"
+                          Content="❌ Cerrar"
+                          Style="{StaticResource SecondaryButtonStyle}"
+                          Margin="5,0"
+                          Click="CloseButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Estadísticas generales -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Margin="30,15,30,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Border Grid.Column="0" Background="#E8F5E8" CornerRadius="6" Padding="15" Margin="5,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="TotalRecompensasText" Text="0" FontSize="20" FontWeight="Bold" Foreground="#107C10" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Recompensas Totales" FontSize="11" Foreground="#605E5C" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                
+                <Border Grid.Column="1" Background="#FFEBEE" CornerRadius="6" Padding="15" Margin="5,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="TotalSancionesText" Text="0" FontSize="20" FontWeight="Bold" Foreground="#D13438" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Sanciones Totales" FontSize="11" Foreground="#605E5C" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                
+                <Border Grid.Column="2" Background="#E3F2FD" CornerRadius="6" Padding="15" Margin="5,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="TotalRegistrosText" Text="0" FontSize="20" FontWeight="Bold" Foreground="#0078D4" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Registros Totales" FontSize="11" Foreground="#605E5C" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                
+                <Border Grid.Column="3" Background="#FFF3E0" CornerRadius="6" Padding="15" Margin="5,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="UsuariosAfectadosText" Text="0" FontSize="20" FontWeight="Bold" Foreground="#FF8C00" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Usuarios Afectados" FontSize="11" Foreground="#605E5C" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                
+                <Border Grid.Column="4" Background="#F3E5F5" CornerRadius="6" Padding="15" Margin="5,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="PromedioReputacionText" Text="0" FontSize="20" FontWeight="Bold" Foreground="#9C27B0" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Promedio General" FontSize="11" Foreground="#605E5C" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Filtros -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}" Margin="30,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <ComboBox x:Name="TipoFilterComboBox"
+                        Grid.Column="0"
+                        Height="32" Margin="5,0"
+                        FontSize="12"
+                        SelectionChanged="TipoFilterComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Todos los tipos" IsSelected="True"/>
+                    <ComboBoxItem Content="Solo recompensas"/>
+                    <ComboBoxItem Content="Solo sanciones"/>
+                </ComboBox>
+
+                <ComboBox x:Name="FechaFilterComboBox"
+                        Grid.Column="1"
+                        Height="32" Margin="5,0"
+                        FontSize="12"
+                        SelectionChanged="FechaFilterComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Todas las fechas" IsSelected="True"/>
+                    <ComboBoxItem Content="Últimos 7 días"/>
+                    <ComboBoxItem Content="Último mes"/>
+                    <ComboBoxItem Content="Últimos 3 meses"/>
+                </ComboBox>
+
+                <Button x:Name="ClearFiltersButton"
+                      Grid.Column="2"
+                      Content="🗑️ Limpiar Filtros"
+                      Style="{StaticResource SecondaryButtonStyle}"
+                      Click="ClearFiltersButton_Click"/>
+            </Grid>
+        </Border>
+
+        <!-- Lista de registros -->
+        <Border Grid.Row="3" Style="{StaticResource CardStyle}" Margin="30,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock x:Name="RecordCountText"
+                             Text="Registros de reputación" 
+                             FontSize="16" FontWeight="SemiBold" 
+                             Foreground="#323130"/>
+                </Grid>
+                
+                <DataGrid Grid.Row="1" 
+                        x:Name="GeneralHistoryDataGrid"
+                        AutoGenerateColumns="False"
+                        CanUserAddRows="False"
+                        CanUserDeleteRows="False"
+                        CanUserReorderColumns="True"
+                        CanUserResizeColumns="True"
+                        CanUserResizeRows="False"
+                        CanUserSortColumns="True"
+                        GridLinesVisibility="Horizontal"
+                        HeadersVisibility="Column"
+                        HorizontalGridLinesBrush="#F0F0F0"
+                        Background="White"
+                        AlternatingRowBackground="#F8F9FA"
+                        RowHeight="45"
+                        FontSize="12"
+                        FontFamily="Segoe UI"
+                        SelectionMode="Single">
+                    
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Fecha" 
+                                          Binding="{Binding FechaFormateada}" 
+                                          Width="110"
+                                          IsReadOnly="True">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="FontSize" Value="11"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        
+                        <DataGridTextColumn Header="Usuario" 
+                                          Binding="{Binding UsuarioNombre}" 
+                                          Width="150"
+                                          IsReadOnly="True">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        
+                        <DataGridTextColumn Header="DNI" 
+                                          Binding="{Binding UsuarioDni}" 
+                                          Width="90"
+                                          IsReadOnly="True">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="FontSize" Value="11"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        
+                        <DataGridTemplateColumn Header="Tipo" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ContentPresenter Content="{Binding}" 
+                                                    ContentTemplate="{StaticResource TipoReputacionTemplate}" 
+                                                    VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        
+                        <DataGridTextColumn Header="Motivo" 
+                                          Binding="{Binding Motivo}" 
+                                          Width="*"
+                                          IsReadOnly="True">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="MaxHeight" Value="40"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        
+                        <DataGridTemplateColumn Header="Puntos" Width="70">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ContentPresenter Content="{Binding}" 
+                                                    ContentTemplate="{StaticResource PuntosDataTemplate}" 
+                                                    VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+
+        <!-- Status Bar -->
+        <Border Grid.Row="4" Background="White" Height="30" BorderBrush="#E1E1E1" BorderThickness="0,1,0,0">
+            <Grid Margin="30,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="0" 
+                         x:Name="StatusText"
+                         Text="Listo" 
+                         VerticalAlignment="Center"
+                         FontSize="11" 
+                         Foreground="#605E5C"/>
+                
+                <TextBlock Grid.Column="1" 
+                         x:Name="LastUpdateText"
+                         Text="" 
+                         VerticalAlignment="Center"
+                         FontSize="11" 
+                         Foreground="#605E5C"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

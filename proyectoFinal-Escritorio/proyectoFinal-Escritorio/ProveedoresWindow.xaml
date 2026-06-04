@@ -1,0 +1,307 @@
+<Window x:Class="proyectoFinal_Escritorio.ProveedoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestión de Proveedores - Sistema de Gestión" Height="800" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+
+    <Window.Resources>
+        <Style x:Key="FluentButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="4"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#106EBE"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#005A9E"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#0078D4"/>
+            <Setter Property="BorderBrush" Value="#0078D4"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#F3F9FD"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="DangerButtonStyle" TargetType="Button" BasedOn="{StaticResource FluentButtonStyle}">
+            <Setter Property="Background" Value="#D13438"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#A4262C"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#8B1538"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="TabItemStyle" TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Background="Transparent" Padding="20,12" Margin="0,0,5,0">
+                            <ContentPresenter ContentSource="Header"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#605E5C"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#F8F9FA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Barra superior -->
+        <Border Grid.Row="0" Background="White" Padding="20" BorderBrush="#E1E1E1" BorderThickness="0,0,0,1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Gestión de Proveedores" FontSize="20" FontWeight="SemiBold" Foreground="#323130"/>
+                    <TextBlock x:Name="TotalProveedoresText" Text="Total: 0 proveedores" FontSize="12" Foreground="#605E5C" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button x:Name="NuevoProveedorButton" Content="➕ Nuevo Proveedor" Style="{StaticResource FluentButtonStyle}" Click="NuevoProveedorButton_Click" Margin="0,0,10,0"/>
+                    <Button Content="🔄 Actualizar" Style="{StaticResource SecondaryButtonStyle}" Click="ActualizarButton_Click" Margin="0,0,10,0"/>
+                    <Button Content="← Volver" Style="{StaticResource SecondaryButtonStyle}" Click="VolverButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- TabControl con dos pestañas -->
+        <TabControl Grid.Row="1" Padding="20" Background="Transparent" BorderThickness="0">
+            <!-- Pestaña 1: Proveedores -->
+            <TabItem Header="🏪 Proveedores" Style="{StaticResource TabItemStyle}" Background="White">
+                <Grid Background="#F8F9FA">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Panel de búsqueda y filtros -->
+                    <Border Grid.Row="0" Background="White" CornerRadius="8" Padding="20" Margin="0,0,0,20" BorderBrush="#E1E1E1" BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,10,0">
+                                <TextBlock Text="Buscar por nombre" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <TextBox x:Name="BuscarNombreTextBox" Padding="8,6" BorderBrush="#E1E1E1" BorderThickness="1" Height="28"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,10,0">
+                                <TextBlock Text="Buscar por CIF" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <TextBox x:Name="BuscarCifTextBox" Padding="8,6" BorderBrush="#E1E1E1" BorderThickness="1" Height="28"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="2" Margin="0,0,10,0">
+                                <TextBlock Text="Buscar por producto" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <TextBox x:Name="BuscarProductoTextBox" Padding="8,6" BorderBrush="#E1E1E1" BorderThickness="1" Height="28"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="3" VerticalAlignment="Bottom">
+                                <Button Content="🔍 Buscar" Style="{StaticResource FluentButtonStyle}" Click="BuscarButton_Click" Width="100"/>
+                            </StackPanel>
+
+                            <Button Grid.Row="1" Grid.Column="3" Content="Limpiar" Style="{StaticResource SecondaryButtonStyle}"
+                                   Click="LimpiarFiltrosButton_Click" Width="100" Margin="0,10,0,0"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- DataGrid con lista de proveedores -->
+                    <Border Grid.Row="1" Background="White" CornerRadius="8" BorderBrush="#E1E1E1" BorderThickness="1">
+                        <DataGrid x:Name="ProveedoresDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
+                                 MouseDoubleClick="ProveedoresDataGrid_MouseDoubleClick">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="150"/>
+                                <DataGridTextColumn Header="CIF" Binding="{Binding CifFormateado}" Width="100"/>
+                                <DataGridTextColumn Header="Teléfono" Binding="{Binding TelefonoFormateado}" Width="100"/>
+                                <DataGridTextColumn Header="Email" Binding="{Binding EmailFormateado}" Width="150"/>
+                                <DataGridTextColumn Header="Productos" Binding="{Binding ProductosTexto}" Width="200"/>
+                                <DataGridTextColumn Header="Fecha Registro" Binding="{Binding FechaRegistroFormateada}" Width="100"/>
+                                <DataGridTemplateColumn Header="Acciones" Width="160">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="📦" Style="{StaticResource FluentButtonStyle}"
+                                                       Click="PedirButton_Click" Width="35" Height="25" Padding="0" Margin="0,0,5,0"
+                                                       ToolTip="Realizar pedido"/>
+                                                <Button Content="✏️" Style="{StaticResource FluentButtonStyle}"
+                                                       Click="EditarButton_Click" Width="35" Height="25" Padding="0" Margin="0,0,5,0"/>
+                                                <Button Content="🗑️" Style="{StaticResource DangerButtonStyle}"
+                                                       Click="EliminarButton_Click" Width="35" Height="25" Padding="0"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- Barra de estado -->
+                    <Border Grid.Row="2" Padding="10,10" Margin="0,20,0,0">
+                        <TextBlock x:Name="StatusTextBlock" Text="Cargando proveedores..." FontSize="11" Foreground="#605E5C"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- Pestaña 2: Pedidos Realizados -->
+            <TabItem Header="📦 Pedidos Realizados" Style="{StaticResource TabItemStyle}" Background="White">
+                <Grid Background="#F8F9FA">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Panel de filtros para pedidos -->
+                    <Border Grid.Row="0" Background="White" CornerRadius="8" Padding="20" Margin="0,0,0,20" BorderBrush="#E1E1E1" BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <TextBlock Text="Filtrar por proveedor" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <TextBox x:Name="FiltroProveedorPedidosTextBox" Padding="8,6" BorderBrush="#E1E1E1" BorderThickness="1" Height="28"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                                <TextBlock Text="Filtrar por estado" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <ComboBox x:Name="FiltroEstadoPedidosComboBox" Height="28" Padding="8,4">
+                                    <ComboBoxItem Content="Todos los estados"/>
+                                    <ComboBoxItem Content="pendiente"/>
+                                    
+                                    <ComboBoxItem Content="entregado"/>
+
+                                </ComboBox>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="2" Margin="0,0,10,0">
+                                <TextBlock Text="Buscar por número" FontSize="11" FontWeight="SemiBold" Foreground="#605E5C" Margin="0,0,0,5"/>
+                                <TextBox x:Name="BuscarNumeroPedidoTextBox" Padding="8,6" BorderBrush="#E1E1E1" BorderThickness="1" Height="28"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="3" VerticalAlignment="Bottom">
+                                <Button Content="🔍 Buscar" Style="{StaticResource FluentButtonStyle}" Click="BuscarPedidosButton_Click" Width="100"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <!-- DataGrid con lista de pedidos -->
+                    <Border Grid.Row="1" Background="White" CornerRadius="8" BorderBrush="#E1E1E1" BorderThickness="1">
+                        <DataGrid x:Name="PedidosDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
+                                 MouseDoubleClick="PedidosDataGrid_MouseDoubleClick">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Número Pedido" Binding="{Binding NumeroPedido}" Width="120"/>
+                                <DataGridTextColumn Header="Proveedor" Binding="{Binding ProveedorNombre}" Width="150"/>
+                                <DataGridTextColumn Header="Productos" Binding="{Binding CantidadProductos}" Width="80"/>
+                                <DataGridTextColumn Header="Cantidad Total" Binding="{Binding CantidadTotal}" Width="100"/>
+                                
+                                <DataGridTextColumn Header="Estado" Binding="{Binding EstadoCapitalizado}" Width="100"/>
+                                <DataGridTextColumn Header="Fecha Pedido" Binding="{Binding FechaPedidoFormateada}" Width="100"/>
+                                <DataGridTextColumn Header="Entrega Esperada" Binding="{Binding FechaEntregaEsperadaFormateada}" Width="120"/>
+                                <DataGridTemplateColumn Header="Acciones" Width="150">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="👁️" Style="{StaticResource FluentButtonStyle}"
+                                                       Click="VerPedidoButton_Click" Width="35" Height="25" Padding="0" Margin="0,0,5,0"
+                                                       ToolTip="Ver detalles"/>
+                                                <Button Content="✅" Style="{StaticResource FluentButtonStyle}"
+                                                       Click="MarcarEntregadoButton_Click" Width="35" Height="25" Padding="0" Margin="0,0,5,0"
+                                                       ToolTip="Marcar como entregado"/>
+                                                <Button Content="🗑️" Style="{StaticResource DangerButtonStyle}"
+                                                       Click="EliminarPedidoButton_Click" Width="35" Height="25" Padding="0"
+                                                       ToolTip="Eliminar"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- Barra de estado para pedidos -->
+                    <Border Grid.Row="2" Padding="10,10" Margin="0,20,0,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" x:Name="StatusPedidosTextBlock" Text="Cargando pedidos..." FontSize="11" Foreground="#605E5C"/>
+                            <Button Grid.Column="1" Content="🔄 Actualizar Pedidos" Style="{StaticResource SecondaryButtonStyle}" Click="ActualizarPedidosButton_Click"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
